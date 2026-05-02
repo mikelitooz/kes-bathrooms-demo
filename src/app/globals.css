@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Brand CSS Variables ──────────────────────── */
+:root {
+  --background: #F8F5EF;
+  --foreground: #1A1A18;
+  --forest:     #1B3A2D;
+  --forest-light: #2A5144;
+  --wheat:      #E8D5B5;
+  --bronze:     #A47652;
+  --smoke:      #D8D0C3;
+}
+
+/* ── Base ─────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--forest);
+  color: #F8F5EF;
+}
+
+/* ── Focus Ring ───────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 2px;
+}
+
+/* ── Button System ────────────────────────────── */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-forest px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-forest-light;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-smoke px-5 py-3 text-sm font-semibold text-charcoal transition-colors hover:border-taupe hover:bg-linen;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-forest transition-colors hover:bg-forest/5;
+  }
+
+  .input-field {
+    @apply h-11 rounded-lg border border-smoke bg-white px-4 text-sm text-charcoal outline-none transition-colors placeholder:text-taupe focus:border-forest focus:ring-1 focus:ring-forest;
+  }
+}
+
+/* ── Toast Animation ──────────────────────────── */
+@keyframes toast-enter {
+  0%   { opacity: 0; transform: translateY(16px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes toast-exit {
+  0%   { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(16px) scale(0.95); }
+}
+
+/* ── Slider Progress Bar ──────────────────────── */
+@keyframes slider-progress {
+  0%   { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* ── Reduced Motion ───────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
