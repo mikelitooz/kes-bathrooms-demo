@@ -17,30 +17,30 @@ const specialOffers = products.filter((p) => p.offer).slice(0, 4);
 
 const heroSlides = [
   {
-    image: "https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=2000&q=85",
-    alt: "Luxury corner sofa in styled living room",
+    image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=2000&q=85",
+    alt: "Luxury walk-in shower in a modern bathroom",
     tag: "New collection",
-    headline: "Handpicked furniture for K.E.S. homes",
-    copy: "Sofas, beds, dining and decor curated for the way you live. Visit our Chesterfield showroom or shop online.",
-    primaryCta: { label: "Shop all furniture", href: "/shop" },
+    headline: "Premium bathroom fittings for K.E.S. homes",
+    copy: "Walk-in showers, freestanding baths, and luxury vanities curated for your space. Visit our Clay Cross showroom or shop online.",
+    primaryCta: { label: "Shop all bathrooms", href: "/shop" },
     secondaryCta: { label: "View offers", href: "/shop?offer=true" },
   },
   {
-    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=2000&q=85",
-    alt: "Modern upholstered bedroom furniture",
-    tag: "Bedroom event",
-    headline: "Upholstered beds from £549",
-    copy: "Statement headboards and storage beds crafted for restful bedrooms. Free local delivery available.",
-    primaryCta: { label: "Shop beds", href: "/category/beds" },
-    secondaryCta: { label: "Shop wardrobes", href: "/category/wardrobes" },
+    image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=2000&q=85",
+    alt: "Modern freestanding bath",
+    tag: "Bath event",
+    headline: "Freestanding baths from £499",
+    copy: "Statement freestanding and corner baths crafted for restful soaking. Free local delivery available.",
+    primaryCta: { label: "Shop baths", href: "/category/baths" },
+    secondaryCta: { label: "Shop showers", href: "/category/showers" },
   },
   {
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=85",
-    alt: "Oak dining table with upholstered chairs",
-    tag: "Dining inspiration",
-    headline: "Dining sets built for everyday hosting",
-    copy: "Extendable tables, bench sets and statement chairs in warm oak and modern finishes.",
-    primaryCta: { label: "Shop dining", href: "/category/dining" },
+    image: "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=2000&q=85",
+    alt: "Luxury bathroom vanity unit",
+    tag: "Vanity inspiration",
+    headline: "Vanities built for everyday luxury",
+    copy: "Wall-hung units, double basins, and statement taps in matte black and brushed brass finishes.",
+    primaryCta: { label: "Shop vanities", href: "/category/vanities" },
     secondaryCta: { label: "Shop all", href: "/shop" },
   },
 ];
@@ -279,10 +279,10 @@ export function HomeView() {
           <div className="relative z-10">
             <p className="text-xs font-bold uppercase tracking-widest text-wheat">K.E.S. Bathrooms</p>
             <h2 className="mt-2 font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
-              Furnish your whole home with one basket
+              Design your dream bathroom in one basket
             </h2>
             <p className="mx-auto mt-3 max-w-lg text-sm leading-7 text-white/70">
-              Mix categories and unlock bundle pricing. Sofas, beds, dining and decor — all in one place.
+              Mix categories and unlock bundle pricing. Baths, showers, vanities and brassware — all in one place.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link href="/shop" className="inline-flex items-center gap-2 rounded-lg bg-wheat px-6 py-3 text-sm font-bold text-forest transition-colors hover:bg-wheat/90">

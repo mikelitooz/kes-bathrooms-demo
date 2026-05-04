@@ -82,7 +82,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="hidden lg:flex items-center gap-2">
             <span className="font-display text-3xl font-bold tracking-tight text-forest">K.E.S.</span>
-            <span className="font-display text-3xl font-light tracking-tight text-forest">Home Interiors</span>
+            <span className="font-display text-3xl font-light tracking-tight text-forest">Bathrooms</span>
           </Link>
           <Link href="/" className="lg:hidden">
             <span className="font-display text-2xl font-bold tracking-tight text-forest">KES</span>
@@ -97,7 +97,7 @@ export function Header() {
                 id="global-search"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Search sofas, beds, dining, decor..."
+                placeholder="Search baths, showers, vanities, taps..."
                 className="w-full bg-transparent px-3 text-sm outline-none placeholder:text-taupe"
               />
             </div>
